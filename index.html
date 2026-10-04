@@ -1,37 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Card de NFT — Equilibrium</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/card.css">
-  <link rel="stylesheet" href="css/card-hover.css">
-</head>
-<body id="top">
-  <main class="page-center">
-    <article class="card" id="nft-01">
-      <a class="card__media" href="#nft-01" aria-label="Ver Equilibrium #3429">
-        <img src="images/nft-01.jpg" alt="Arte do NFT Equilibrium #3429" width="600" height="600">
-        <span class="card__overlay"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/><circle cx="12" cy="12" r="3.2"/></svg></span>
-      </a>
-      <h2 class="card__title"><a href="#nft-01">Equilibrium #3429</a></h2>
-      <p class="card__text">Nossa coleção Equilibrium promove equilíbrio e calma.</p>
-      <div class="card__stats">
-        <p class="card__price"><svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="true"><path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/></svg><span>0,041 ETH</span></p>
-        <p class="card__time"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="7"/><path d="M8 4v4.2l2.8 1.6"/></svg><span>3 dias restantes</span></p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equilibrium — Lista de NFTs
+    </title>
+    <script>document.documentElement.classList.add('js')
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel ="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.mi n.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/card-hover.css">
+    <link rel="stylesheet" href="css/cardlist.css">
+  </head>
+  <body id="top">
+    <main class="collection" id="collection">
+      <div class="collection__intro">
+        <h1 class="collection__title">A coleção Equilibrium
+        </h1>
+        <p class="collection__lead">Seis obras sobre equilíbrio, calma e movimento suave. Passe o mo use sobre um card para ver de perto.
+        </p>
       </div>
-      <div class="card__creator">
-        <img class="card__avatar" src="images/avatar-1.png" alt="" width="66" height="66">
-        <p>Criação de <a href="#nft-01">Jules Wyvern</a></p>
-      </div>
-    </article>
-  </main>
-  <footer class="attribution">
-    Desafio do <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>
-  </footer>
-</body>
+      <ul class="cardlist">
+        <li>
+          <article class="card" id="nft-01">
+            <a class="card__media" href="#nft-01" aria-label="Ver Equilibrium #3429">
+              <img src="images/nft-01.jpg" alt="Arte do NFT Equilibrium #3429" width="600" height="6 00">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-01">Equilibrium #3429
+              </a>
+            </h2>
+            <p class="card__text">Nossa coleção Equilibrium promove equilíbrio e calma.
+            </p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,041 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>3 dias restantes
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-1.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-01">Jules Wyvern
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card" id="nft-02">
+            <a class="card__media" href="#nft-02" aria-label="Ver Serenity #1187">
+              <img src="images/nft-02.jpg" alt="Arte do NFT Serenity #1187" width="600" height="60 0">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-02">Serenity #1187
+              </a>
+            </h2>
+            <p class="card__text">Um porto tranquilo ao amanhecer, onde a água guarda o céu inteiro.
+            </p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,052 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>5 dias restantes
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-2.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-02">Mara Kellin
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card" id="nft-03">
+            <a class="card__media" href="#nft-03" aria-label="Ver Harmony #0562">
+              <img src="images/nft-03.jpg" alt="Arte do NFT Harmony #0562" width="600" height="600">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-03">Harmony #0562
+              </a>
+            </h2>
+            <p class="card__text">Anéis entrelaçados que se encaixam devagar em um ritmo perfeito.
+            </ p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,038 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>1 dia restante
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-3.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-03">Theo Marsh
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card" id="nft-04">
+            <a class="card__media" href="#nft-04" aria-label="Ver Stillness #2290">
+              <img src="images/nft-04.jpg" alt="Arte do NFT Stillness #2290" width="600" height="60 0">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-04">Stillness #2290
+              </a>
+            </h2>
+            <p class="card__text">Pedras flutuando sobre um vale onde não sopra nenhum vento.
+            </p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,067 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>7 dias restantes
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-1.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-04">Jules Wyvern
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card" id="nft-05">
+            <a class="card__media" href="#nft-05" aria-label="Ver Drift #4471">
+              <img src="images/nft-05.jpg" alt="Arte do NFT Drift #4471" width="600" height="600">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-05">Drift #4471
+              </a>
+            </h2>
+            <p class="card__text">Nuvens suaves à deriva sobre um horizonte neon brilhante.
+            </p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,045 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>2 dias restantes
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-2.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-05">Mara Kellin
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card" id="nft-06">
+            <a class="card__media" href="#nft-06" aria-label="Ver Aurora #0918">
+              <img src="images/nft-06.jpg" alt="Arte do NFT Aurora #0918" width="600" height="600">
+              <span class="card__overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="non e" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="tr ue">
+                  <path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/>
+                  <circle cx ="12" cy="12" r="3.2"/>
+                </svg>
+              </span>
+            </a>
+            <h2 class="card__title">
+              <a href="#nft-06">Aurora #0918
+              </a>
+            </h2>
+            <p class="card__text">Fitas de luz se dobrando sobre um lago congelado e imóvel.
+            </p>
+            <div class="card__stats">
+              <p class="card__price">
+                <svg width="11" height="18" viewBox="0 0 11 18" aria-hidden="tr ue">
+                  <path fill="#00FFF8" d="M5.5 0 0 9.2l5.5 3.2L11 9.2 5.5 0Zm0 13.6L0 10.4 5.5 18 11 10.4l-5.5 3.2Z"/>
+                </svg>
+                <span>0,059 ETH
+                </span>
+              </p>
+              <p class="card__time">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro ke="#8BAAD9" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r ="7"/>
+                  <path d="M8 4v4.2l2.8 1.6"/>
+                </svg>
+                <span>4 dias restantes
+                </span>
+              </p>
+            </div>
+            <div class="card__creator">
+              <img class="card__avatar" src="images/avatar-3.png" alt="" width="66" height="66">
+              <p>Criação de
+                <a href="#nft-06">Theo Marsh
+                </a>
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <footer class="attribution" id="about">    Desafio do
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopene r">Frontend Mentor
+      </a>.    Desenvolvido por Larissa e Luis.
+    </footer>
+    <script src="js/reveal.js">
+    </script>
+  </body>
 </html>
