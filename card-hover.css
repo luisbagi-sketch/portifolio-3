@@ -1,0 +1,32 @@
+.card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 60px -20px hsla(178, 100%, 50%, 0.18);
+}
+
+.card__media img {
+  transition: transform 0.5s ease;
+}
+
+.card__overlay {
+  transition: opacity 0.3s ease;
+}
+
+.card__media:hover .card__overlay,
+.card__media:focus-visible .card__overlay {
+  opacity: 1;
+}
+
+.card__media:hover img {
+  transform: scale(1.06);
+}
+
+.card__title a:hover,
+.card__title a:focus-visible,
+.card__creator a:hover,
+.card__creator a:focus-visible {
+  color: var(--cyan);
+}
