@@ -1,0 +1,69 @@
+.collection {
+     position: relative;
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 4.5rem 1.5rem 3rem;
+}
+
+.collection::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     z-index: -1;
+     width: 100vw;
+    height: 26rem;
+    transform: translateX(-50%);
+    background: radial-gradient(
+          ellipse 50% 70% at 50% 0%,
+          hsla(178, 100%, 50%, 0.14),
+          transparent 70%
+     );
+     pointer-events: none;
+}
+
+.collection__intro {
+     max-width: 44rem;
+     margin: 0 auto 3.5rem;
+     text-align: center;
+}
+
+.collection__title {
+     font-size: clamp(2.25rem, 6vw, 3.75rem);
+     font-weight: 600;
+     line-height: 1.1;
+     letter-spacing: -0.02em;
+}
+
+.collection__lead {
+     max-width: 32rem;
+     margin: 1.25rem auto 0;
+     color: var(--soft-blue);
+     font-size: 1.125rem;
+}
+
+.cardlist {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 350px));
+     justify-content: center;
+     gap: 2rem;
+     list-style: none;
+}
+
+.cardlist > li {
+     display: flex;
+}
+
+.cardlist .card {
+     max-width: none;
+}
+
+
+.js .cardlist .card:not(.animate__animated) {
+     opacity: 0;
+}
+
+.cardlist .card.animate__animated {
+     --animate-duration: 0.9s;
+}
