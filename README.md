@@ -1,1 +1,1 @@
-# portifolio-3
+# nft-gallery-equilibrium
