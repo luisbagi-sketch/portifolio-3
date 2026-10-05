@@ -1,4 +1,4 @@
-# Equilibrium — Galeria de NFTs
+# Equilibrium — Galeria de NFTs.
 
 Projeto do **Desafio Portfólio 1.0**: um componente de card de NFT que evoluiu para uma lista de cards com animações e um header responsivo. Feito com HTML5 e CSS, com um pequeno script para as animações de entrada.
 
